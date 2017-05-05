@@ -38,7 +38,7 @@ public class CSVImport implements IImportData {
 
 	private static final String IMPORT_CLIENT_NAME = "name";
 	private static final String IMPORT_CLIENT_SURNAME = "surname";
-	private static final String IMPORT_CLIENT_CONTRACT_NUMBER = "contaract_number";
+	private static final String IMPORT_CLIENT_CONTRACT_NUMBER = "contract_number";
 	private static final String IMPORT_CLIENT_PASSWORD = "password";
 	private static final String IMPORT_CLIENT_BALANCE = "balance";
 	private static final String IMPORT_CLIENT_CONNECTION_STATUS = "connection_status";

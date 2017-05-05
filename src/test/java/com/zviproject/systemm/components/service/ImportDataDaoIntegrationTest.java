@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
@@ -23,10 +24,11 @@ import com.zviproject.systemm.components.entities.Client;
 @Transactional
 public class ImportDataDaoIntegrationTest {
 
+	@Autowired
+	private ImportDataDao importDataDao;
+
 	@Test
 	public void saveClientsTest() {
-		ImportDataDao importDataDao = new ImportDataDao();
-
 		List<Client> clients = new LinkedList<>();
 
 		Client firstClient = new Client();

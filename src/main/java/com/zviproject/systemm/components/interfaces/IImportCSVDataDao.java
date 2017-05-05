@@ -28,4 +28,17 @@ public interface IImportCSVDataDao {
 	 */
 	public void saveClients(List<Client> clients);
 
+	/**
+	 * Delete clients from database
+	 * 
+	 * @param clients
+	 */
+	public void deleteClients(List<String> clients);
+
+	/**
+	 * Delete tariffs from database
+	 * 
+	 * @param tariffs
+	 */
+	public void deleteTariffs(List<String> tariffs);
 }

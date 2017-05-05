@@ -2,6 +2,7 @@ package com.zviproject.systemm.services;
 
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +13,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.zviproject.systemm.components.interfaces.IImportCSVDataDao;
 import com.zviproject.systemm.importt.csv.CSVImport;
 import com.zviproject.systemm.interfaces.IImportData;
 
@@ -27,6 +29,9 @@ public class ImportSurveyService {
 
 	@Autowired
 	private CSVImport csvImport;
+
+	@Autowired
+	private IImportCSVDataDao iImportCSVDataDao;
 
 	private static final Logger LOGGER = Logger.getLogger(ImportSurveyService.class);
 
@@ -74,6 +79,14 @@ public class ImportSurveyService {
 		default:
 			return null;
 		}
+	}
+
+	public void deleteTariffs(List<String> tariffs) {
+		iImportCSVDataDao.deleteTariffs(tariffs);
+	}
+
+	public void deleteClients(List<String> clients) {
+		iImportCSVDataDao.deleteClients(clients);
 	}
 
 }
