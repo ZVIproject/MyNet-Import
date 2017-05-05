@@ -22,7 +22,7 @@ import com.zviproject.systemm.components.interfaces.IImportCSVDataDao;
 /**
  * Save survey into db
  * 
- * @author olegnovatskiy
+ * @author zviproject
  */
 @Repository
 public class ImportDataDao implements IImportCSVDataDao {

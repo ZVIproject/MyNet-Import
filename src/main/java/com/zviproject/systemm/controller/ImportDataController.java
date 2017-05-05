@@ -20,7 +20,7 @@ import com.zviproject.systemm.services.ImportSurveyService;
 /**
  * Controller for import survey
  * 
- * @author olegnovatskiy
+ * @author zviproject
  */
 @RestController
 @RequestMapping("/rest/mynet/v1/import")

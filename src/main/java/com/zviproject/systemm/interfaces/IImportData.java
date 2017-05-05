@@ -5,7 +5,7 @@ import javax.servlet.http.Part;
 /**
  * Importing survey from file
  * 
- * @author olegnovatskiy
+ * @author zviproject
  */
 public interface IImportData {
 

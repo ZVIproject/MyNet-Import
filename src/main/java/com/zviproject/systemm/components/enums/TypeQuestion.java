@@ -2,13 +2,13 @@ package com.zviproject.systemm.components.enums;
 
 /**
  * Enum of type question.
- *  
- * @author olegnovatskiy
+ * 
+ * @author zviproject
  */
 public enum TypeQuestion {
 
-	RATE110("rate1-10"), RATE15("rate1-5"), RATE13("rate1-3"), YESNO("yesno"), LIST("list"), 
-	MULTILIST("multilist"), INPUT("input"), MEMO("memo");
+	RATE110("rate1-10"), RATE15("rate1-5"), RATE13("rate1-3"), YESNO("yesno"), LIST("list"), MULTILIST(
+			"multilist"), INPUT("input"), MEMO("memo");
 
 	private String value;
 
@@ -19,6 +19,5 @@ public enum TypeQuestion {
 	public String getValue() {
 		return value;
 	}
-
 
 }

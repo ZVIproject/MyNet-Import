@@ -21,7 +21,7 @@ import com.zviproject.systemm.interfaces.IImportData;
 /**
  * Importing survey from file
  * 
- * @author olegnovatskiy
+ * @author zviproject
  */
 @Service
 public class CSVImport implements IImportData {

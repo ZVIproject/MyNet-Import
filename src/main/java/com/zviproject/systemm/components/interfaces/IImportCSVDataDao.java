@@ -8,7 +8,7 @@ import com.zviproject.systemm.components.entities.Tariff;
 /**
  * Save survey into db
  * 
- * @author olegnovatskiy
+ * @author zviproject
  */
 public interface IImportCSVDataDao {
 
